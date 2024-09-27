@@ -22,7 +22,6 @@ body{
     margin-bottom: 60px;
     font-weight: 400;
     color: rgb(68, 44, 52);   
-
 }
 
 .vinheria h2 {
@@ -46,4 +45,9 @@ body{
 
 .vinheria img:hover {
     transform: scale(1.1);
+}
+
+.conteudo p{
+    padding-left: 12px;
+    font-size: 24px;
 }
