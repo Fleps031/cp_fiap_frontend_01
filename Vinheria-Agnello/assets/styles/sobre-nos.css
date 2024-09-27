@@ -1,0 +1,49 @@
+
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+main{
+    margin-top: 12%;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.vinheria{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    color: rgb(68, 44, 52);   
+
+}
+
+.vinheria h2 {
+    background-color: rgb(68, 44, 52);
+    margin-bottom: 24px;
+    padding-left: 8px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    font-weight: 400;   
+
+}
+
+.vinheria img{
+    box-shadow: 5px 5px 2.5px black;
+    width: 350px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.vinheria img:hover {
+    transform: scale(1.1);
+}
