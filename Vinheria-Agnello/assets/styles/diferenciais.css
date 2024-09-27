@@ -1,0 +1,68 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: rgb(68, 44, 52);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+section.diferenciais {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.diferenciais p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.imagem-vinho {
+    text-align: center;
+    margin-top: 20px;
+    width: 800px;
+}
+
+.imagem-vinho img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+    section.diferenciais {
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    section.diferenciais p {
+        font-size: 1.3em;
+    }
+}
