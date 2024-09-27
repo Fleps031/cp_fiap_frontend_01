@@ -11,8 +11,27 @@ body{
     box-sizing: border-box;
 }
 
-main{
+.main-page{
+    display: flex;
+    justify-content: center;
     height: 1400px;
+    background: url('./assets/imgs/main-background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-page-section{
+    margin-top: 20%;
+}
+
+.main-flair{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: rgb(68, 44, 52);
+    font-weight: 100 ;
+    color: white;
 }
 
 header{
