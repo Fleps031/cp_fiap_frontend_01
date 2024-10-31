@@ -3,35 +3,54 @@
     --main-color: hsl(340, 21%, 22%);
     --input-color: rgb(246, 246, 246);
 }
+
 html {
     height: 100%;
 }
-main{
+
+main {
     margin-top: 10%;
 }
+
 .contact-form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
 .contact-form > div {
     padding: 5rem;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     margin-top: 50px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: drop 0.5s forwards;
 }
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .contact-page {
     background-image: url('../imgs/pessoas-vinho.avif');
     position: relative;
-    background-repeat:no-repeat;
-    background-size:100% 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
 }
 
 .title > div {
@@ -40,7 +59,7 @@ main{
     background-color: var(--main-color);
 }
 
-.title > div > h1, .title > div > h2  {
+.title > div > h1, .title > div > h2 {
     color: var(--text-color);
 }
 
@@ -59,7 +78,8 @@ main{
     justify-content: space-around;
 }
 
-.form-control > input, .form-control > textarea {
+.form-control > input,
+.form-control > textarea {
     background-color: rgb(246, 246, 246);
     padding: 5px;
     border: none;
@@ -67,22 +87,36 @@ main{
 
 .form-control > label {
     color: var(--main-color);
+    margin-right: 50px;
 }
 
 .form-control > button {
-    background-color: var(--main-color);
+    background-color: hsl(340, 21%, 22%);
     color: var(--text-color);
     font-size: 1em;
     padding: 1rem;
     width: 100%;
     border-radius: 5px;
     margin-top: 30px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .form-control > button:hover {
-    background-color: hsl(340, 21%, 18%);
+    background-color: hsl(340, 45%, 6%);
+    color: white;
 }
 
 .form-control textarea {
     resize: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form > div:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.contact-form > div:nth-child(2) {
+    animation-delay: 1s;
 }
