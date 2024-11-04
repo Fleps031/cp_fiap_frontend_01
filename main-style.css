@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@ body{
     justify-content: space-between;
     height: 100vh;
     box-sizing: border-box;
+    font-family: "Itim", cursive;
 }
 
 p::selection, span::selection {
