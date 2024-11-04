@@ -10,16 +10,10 @@ main {
   margin-top: 8%;
 }
 
-header {
-  position: absolute;
-  z-index: 1;
-}
-
 .titulo {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: 800;
   color: rgb(68, 44, 52);

@@ -4,7 +4,6 @@ body {
     justify-content: space-between;
     height: 100vh;
     box-sizing: border-box;
-    animation: slide-in 1.5s ease-out;
 }
 
 @keyframes slide-in {
@@ -38,14 +37,20 @@ section.diferenciais {
     margin: 0 auto;
     margin-top: 10%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fade-in 2s ease-in;
+    animation: slide-in 0.8s ease-in-out;
+}
+
+p {
+    animation: fade-in 0.8s ease-in;
 }
 
 @keyframes fade-in {
     0% {
-        opacity: 0;
+        margin-top: 80%;
+        opacity: 0.2;
     }
     100% {
+        margin-top: 0;
         opacity: 1;
     }
 }
